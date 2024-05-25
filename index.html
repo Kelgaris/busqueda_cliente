@@ -8,17 +8,33 @@
 <body>
     <header>
         <nav>
-            <div class="enlace"><a href="#">Inicio</a></div>
+            <div class="enlace"><a href="index.html">Inicio</a></div>
             <div class="enlace"><a href="#">Productos</a></div>
             <div class="enlace"><a href="#">Clientes</a></div>
             <div class="enlace"><a href="#">Contacto</a></div>
         </nav>
     </header>
+
     <div class="buscador">
     <input class="barra" type="text" name="nombre" id="nombre" placeholder="Buscar por nombre &#128269;">
+    <button class="añadirCliente">Añadir Cliente</button>
     </div>
+
     <div class="container">
         
+    </div>
+    <div class="containerForm">
+        <form>
+            <fieldset>
+                <legend>Añadir Cliente Nuevo</legend>
+                <input type="text" name="name" id="nombre" class="nombreCliente" placeholder="Introduzca el nombre">
+                <input type="text" name="apellidos" id="apellidos" placeholder="Introduzca los apellidos">
+                <input type="file" name="imagen" id="imagen" class="imagenCarta" accept="image/*">
+                <textarea name="descripcion" id="descipcion" class="descripcionCliente" cols="50" rows="6" placeholder="Por favor Introduzca una breve descripción del cliente"></textarea>
+                <button type="button" class="añadir">Añadir</button>
+                <button type="reset" class="limpiar">Limpiar</button>
+            </fieldset>
+        </form>
     </div>
     <footer></footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
